@@ -51,12 +51,41 @@
             text-align: right;
             margin-top: 5px;
         }
+	{
+       margin: 0;
+      overflow: hidden;
+    }
+
+    .leaf {
+      position: absolute;
+      background: url('https://clipart-library.com/img1/896109.png') no-repeat;
+      background-size: contain;
+      width: 20px; /* Adjust the size of the leaf */
+      height: 20px;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
         
 
 
     </style>
 </head>
-
+     <div class="leaf" style="left: 10%; animation-duration: 8s;"></div>
+     <div class="leaf" style="left: 20%; animation-duration: 7s;"></div>
+     <div class="leaf" style="left: 30%; animation-duration: 6s;"></div>
+     <div class="leaf" style="left: 40%; animation-duration: 8s;"></div>
+     <div class="leaf" style="left: 60%; animation-duration: 6s;"></div>
+     <div class="leaf" style="left: 70%; animation-duration: 7s;"></div>
+     <div class="leaf" style="left: 80%; animation-duration: 6s;"></div>
+     <div class="leaf" style="left: 90%; animation-duration: 8s;"></div>
 <body>
 
     <header style="background-image: url('https://lh5.googleusercontent.com/p/AF1QipPK0S_jtCrEZ5drAsKzO0xE-CY-K_hMZSlDxSB_=w408-h272-k-no'); background-size: cover; background-position: center; height: 400px; position: relative;">
