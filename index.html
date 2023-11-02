@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMMHSS EDAYARANMULA</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+	        
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 1em;
+        }
+
+        section {
+            padding: 1em;
+            
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        #digital-clock {
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5em;
+            text-align: right;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #date {
+            font-size: 1.2em;
+            text-align: right;
+            margin-top: 5px;
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+
+    <header style="background-image: url('https://lh5.googleusercontent.com/p/AF1QipPK0S_jtCrEZ5drAsKzO0xE-CY-K_hMZSlDxSB_=w408-h272-k-no'); background-size: cover; background-position: center; height: 400px; position: relative;">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: rgba(255, 255, 255, 1);text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);">
+        <h2>Welcome to My School</h2>
+        <h1>AMMHSS EDAYARANMULA</h1>
+        <h3>ഏബ്രഹാം മാർത്തോമ്മാ മെമ്മോറിയൽ ഹയർ സെക്കൻഡറി സ്കൂൾ</h3>
+    </div>
+</header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#clubs">Clubs</a></li>
+            <li><a href="#socialmedias">Social Medias</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+    <div id="digital-clock"></div>
+    <div id="date"></div>
+
+    <script>
+        function updateDigitalClock() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            var timeString = hours + ":" + minutes + ":" + seconds;
+
+            document.getElementById("digital-clock").innerText = timeString;
+
+            var day = now.toLocaleDateString('en-US', { weekday: 'long' });
+            var date = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+            var dateString = day + ", " + date;
+
+            document.getElementById("date").innerText = dateString;
+        }
+
+        // Update every second
+        setInterval(updateDigitalClock, 1000);
+
+        // Initial call to display clock immediately
+        updateDigitalClock();
+    </script>
+	    
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p><b>Welcome to our school website.</b></p>
+        <p>Abraham Marthoma Memorial Higher Secondary School (AMMHSS), is a higher secondary school situated in Edayaranmula, Pathanamthitta, Kerala, India.</p>
+        <p>At Our School, we are dedicated to providing a nurturing environment for students to learn, grow, and excel.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p><b>എല്ലാ കുട്ടികൾക്കും ഞങ്ങളുടെ ഈ വിദ്യാലയത്തിലേക്ക് സ്വാഗതം</b></p>
+
+        <p>HEADMISTRESS : ANILA SAMUEL</p>
+        <p>PRINCIPAL: LALI JOHN</p>
+        <p>SITUATED:EDAYARANMULA, ARANMULA</p>
+        <p>ESTD:1919 , EDUCATIONAL DISTRICT :THIRUVALLA</p>
+
+        <p>DOCUMENTATION AND VIDEO EDITING: LITTLE KITES STUDENTS</p>
+        <p>DEVICE : DSLR CAMERA,WEBCAM.</p>
+        <p><strong>MORE  INFORMATION  OF SCHOOL ARE AVAILABLE IN SCHOOL WIKI AND SOCIAL MEDIA's.<strong></p>
+        <h4>SCHOOL WIKI</h4>
+        <a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3"
+> To open School Wiki ,Click Here  </a>
+    </section>
+    
+    <section id="clubs">
+    <h2>CLUBS </h2>
+    <h3>LITTLE KITES</h3> 
+    <p><a href="https://kite.kerala.gov.in/KITE/index.php/welcome/ict/8">LITTLE KITES OFFICIAL WEBSITE</a></p>
+<p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%B2%E0%B4%BF%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B4%BF%E0%B5%BD%E0%B4%95%E0%B5%88%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%B8%E0%B5%8D"
+> To open School LITTLE KITES SITE ,Click Here  </a></p>
+
+    <h3>NCC</h3>
+    <p>1</p>
+<a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%A8%E0%B4%BE%E0%B4%B7%E0%B4%A3%E0%B5%BD_%E0%B4%95%E0%B5%87%E0%B4%A1%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D_%E0%B4%95%E0%B5%8B%E0%B4%AA%E0%B5%8D%E0%B4%B8%E0%B5%8D"
+>To open School NCC SITE ,Click Here</a>
+
+
+    <h3>JRC</h3>
+    <p>2</p>
+<p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%9C%E0%B5%82%E0%B4%A8%E0%B4%BF%E0%B4%AF%E0%B5%BC_%E0%B4%B1%E0%B5%86%E0%B4%A1%E0%B5%8D_%E0%B4%95%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%B8%E0%B5%8D">open School JRC SITE ,Click Here</a></p>
+    
+    <h3>SPC</h3>
+    <p>3</p>
+<p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%B8%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%82%E0%B4%A1%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%8D_%E0%B4%AA%E0%B5%8B%E0%B4%B2%E0%B5%80%E0%B4%B8%E0%B5%8D_%E0%B4%95%E0%B4%BE%E0%B4%A1%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D">To open School SPC SITE ,Click Here</a></p>
+
+    <h3>SCOUT AND GUIDES</h3>
+    <p>4</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%97%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B5%8D%26%E0%B4%97%E0%B5%88%E0%B4%A1%E0%B5%8D%E0%B4%B8%E0%B5%8D">To open School SCOUT AND GUIDES SITE ,Click Here</a>
+
+    <h4>NSS</h4>
+    <p>5</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%A8%E0%B4%BE%E0%B4%B7%E0%B4%A3%E0%B5%BD_%E0%B4%B8%E0%B5%BC%E0%B4%B5%E0%B5%8D%E0%B4%B5%E0%B5%80%E0%B4%B8%E0%B5%8D_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%80%E0%B4%82">To open School NSS SITE ,Click Here</a>
+
+    <h4>SOCIAL SCIENCE</h4>
+    <p>6</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%B8%E0%B5%8B%E0%B4%B7%E0%B5%8D%E0%B4%AF%E0%B5%BD_%E0%B4%B8%E0%B4%AF%E0%B5%BB%E0%B4%B8%E0%B5%8D_%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B4%AC%E0%B5%8D%E0%B4%AC%E0%B5%8D"
+>To open School SOCIAL SCIENCE SITE ,Click Here</a>
+
+    <h4>SCIENCE</h4>
+    <p>7</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%B8%E0%B4%AF%E0%B5%BB%E0%B4%B8%E0%B5%8D_%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B4%AC%E0%B5%8D%E0%B4%AC%E0%B5%8D"
+>To open School  SCIENCE SITE ,Click Here</a>
+
+    <h4>MATHEMATICS</h4>
+    <p>8</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%97%E0%B4%A3%E0%B4%BF%E0%B4%A4_%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B4%AC%E0%B5%8D%E0%B4%AC%E0%B5%8D"
+>To open School MATHEMATICS SITE ,Click Here</a>
+
+    <h4>NATURE</h4>
+    <p>9</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%AA%E0%B4%B0%E0%B4%BF%E0%B4%B8%E0%B5%8D%E0%B4%A5%E0%B4%BF%E0%B4%A4%E0%B4%BF_%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B4%AC%E0%B5%8D%E0%B4%AC%E0%B5%8D"
+>To open School NATURE SITE ,Click Here</a>
+
+    <h4>ARTS</h4>
+    <p>10</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%86%E0%B5%BC%E0%B4%9F%E0%B5%8D%E2%80%8C%E0%B4%B8%E0%B5%8D_%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B4%AC%E0%B5%8D%E0%B4%AC%E0%B5%8D"
+>To open School ARTS SITE ,Click Here</a>
+
+    <h4>SPORTS</h4>
+    <p>11</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%B8%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B5%BC%E2%80%8C%E0%B4%9F%E0%B5%8D%E0%B4%B8%E0%B5%8D_%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B4%AC%E0%B5%8D%E0%B4%AC%E0%B5%8D"
+>To open School SPORTS SITE ,Click Here</a>
+
+    <h4>FILM</h4>
+    <p>12</p>
+    <p><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%AB%E0%B4%BF%E0%B4%B2%E0%B4%BF%E0%B4%82_%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B4%AC%E0%B5%8D%E0%B4%AC%E0%B5%8D"
+>To open School FILM SITE ,Click Here</a>
+
+    <h4><a href="https://schoolwiki.in/%E0%B4%8E._%E0%B4%8E%E0%B4%82_.%E0%B4%8E%E0%B4%82._%E0%B4%B9%E0%B4%AF%E0%B5%BC%E0%B4%B8%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%B1%E0%B4%BF_%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B5%BE_%E0%B4%87%E0%B4%9F%E0%B4%AF%E0%B4%BE%E0%B4%B1%E0%B4%A8%E0%B5%8D%E0%B4%AE%E0%B5%81%E0%B4%B3/%E0%B4%AE%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B4%AC%E0%B5%8D%E0%B4%AC%E0%B5%81%E0%B4%95%E0%B5%BE"
+>MORE CLUBS,Click Here <a/>
+ 
+    </section>
+
+    <section id="socialmedias">
+      
+     
+
+        <h2 style="text-align: center;">YOUTUBE</h2>
+        <p style="text-align: center;"><a href="https://www.youtube.com/@ammhssedayaranmula1919" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/50px-YouTube_full-color_icon_%282017%29.svg.png" alt="Click Icon">
+</a> </p>
+
+        
+        <h2 style="text-align: center;">INSTAGRAM</h2>
+       <p style="text-align: center;"> <a href="https://instagram.com/ammhss_edayaranmula_1919?igshid=NzZlODBkYWE4Ng==" target="_blank">
+    <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-50.png" alt="Click Icon">
+</a> </p>
+        <h2 style="text-align: center;">FACEBOOK</h2>
+        <p style="text-align: center;"> <a href="https://www.facebook.com/profile.php?id=100067328527536&mibextid=ZbWKwL" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/50px-2021_Facebook_icon.svg.png" alt="Click Icon">
+</a> </p>
+     
+    </section>
+
+
+    <section id="contact">
+        <h2 style="text-align: center;">Contact</h2>
+        <p style="text-align: center;">Get in touch with us. We'd love to hear from you!</p>
+        <p style="text-align: center;"><a href="https://maps.app.goo.gl/i5DbKjXFX8Fueuay6">GOOGLE MAPS LOCATION</a></p>
+	           <p style="text-align: center;">DM's  US IN INSTAGRM</p> 
+    </section>
+
+    <footer>
+        <p>&copy; 1919 AMMHSS EDAYARANMULA. All rights reserved.</p>
+        <p>&copy; LK 2021-24 LK 2022-25. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
