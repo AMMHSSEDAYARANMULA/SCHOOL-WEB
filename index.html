@@ -91,15 +91,26 @@
             object-fit: cover;
             border-radius: 60%;
         }   
-
+          video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
 
     </style>
 </head>
      
 <body>
 
-    <header style="background-image: url('hhttps://lh3.googleusercontent.com/p/AF1QipPK0S_jtCrEZ5drAsKzO0xE-CY-K_hMZSlDxSB_=s680-w680-h510'); background-size: cover; background-position: center; height: 400px; position: relative;">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: rgba(255, 255, 255, 1);text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);">
+    <header style="position: relative; height: 400px; overflow: hidden;">
+    <!-- Replace 'your-video-source.mp4' with the actual path to your video file -->
+    <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover; position: relative;">
+        <source src="/home/user/video/school.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: rgba(255, 255, 255, 1); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);">
         <h2>Welcome to My School</h2>
         <h1>AMMHSS EDAYARANMULA</h1>
         <h3>ഏബ്രഹാം മാർത്തോമ്മാ മെമ്മോറിയൽ ഹയർ സെക്കൻഡറി സ്കൂൾ</h3>
