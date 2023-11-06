@@ -31,7 +31,7 @@ def submit_form():
         # Compose the email message
         msg = Message('New Student Registration',
                       sender='your-email@gmail.com',  # Replace with your Gmail address
-                      recipients=['ammhssedl@gmail.com'])  # Replace with your recipient email address
+                      recipients=['ammhssinsta@gmail.com'])  # Replace with your recipient email address
         msg.body = f"Name: {name}\nAddress: {address}\nPlace: {place}\nPincode: {pincode}\nAadhar: {aadhar}\nAge: {age}\nPhone: {phone}"
 
         # Send the email
